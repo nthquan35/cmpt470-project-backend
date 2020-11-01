@@ -11,9 +11,9 @@ app.get('/', (req, res) => {
 	res.send('Backend is working');
 })
 
-app.post('/signin', (req, res) => {
+// app.post('/signin', (req, res) => {
 
-})
+// })
 
 app.post('/register', (req, res) => {
 	const {name, email, password, dob, city} = req.body;
@@ -21,6 +21,7 @@ app.post('/register', (req, res) => {
 	res.send(req.body);
 })
 
-app.listen(process.env.PORT || 3000, () => {
-	console.log(`Sucess!!! on port ${process.env.PORT}`);
+const PORT = process.env.PORT || 8080;
+app.listen(PORT, () => {
+  console.log(`Server listening on port ${PORT}...`);
 });
