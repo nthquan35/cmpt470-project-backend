@@ -1,0 +1,29 @@
+{
+  "name": "cmpt470-project-backend",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "nodemon script.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/nthquan35/cmpt470-project-backend.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/nthquan35/cmpt470-project-backend/issues"
+  },
+  "homepage": "https://github.com/nthquan35/cmpt470-project-backend#readme",
+  "devDependencies": {
+    "nodemon": "^2.0.6"
+  },
+  "dependencies": {
+    "bcrypt-nodejs": "0.0.3",
+    "body-parser": "^1.19.0",
+    "cors": "^2.8.5",
+    "express": "^4.17.1"
+  }
+}
