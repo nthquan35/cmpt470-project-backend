@@ -7,10 +7,6 @@ app.use(bodyParser.json());
 app.use(cors());
 
 
-const database = {
-
-}
-
 app.get('/', (req, res) => {
 	res.send('Backend is working');
 })
@@ -25,6 +21,6 @@ app.post('/register', (req, res) => {
 	res.send(req.body);
 })
 
-app.listen(3001, () => {
-	console.log('Checking')
-})
+app.listen(process.env.PORT || 3000, () => {
+	console.log(`Sucess!!! on port ${process.env.PORT}`);
+});
